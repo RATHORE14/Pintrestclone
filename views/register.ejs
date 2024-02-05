@@ -1,0 +1,24 @@
+<% include ./partials/header.ejs %>
+
+
+<div class="w-full h-screen   bg-[url('https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] flex items-center  justify-center">
+    <div class="w-[30vw]  bg-white px-11 py-10 rounded-[30px]">
+        <h1 class="text-2xl text-center font-semibold inline-block text-zinc-700 tracking-tight capitalize leading-none text-bold">Create New Account</h1>
+        <form action="/register" method="post">
+            <input class="block border-2 rounded-md mt-1 w-full px-3" type="text" name="username" placeholder="username">
+            <input class="block border-2 rounded-md mt-1 w-full px-3" type="text" name="name" placeholder="Full name">
+            <input class="block border-2 rounded-md mt-1 w-full px-3" type="password" name="password" placeholder="password">
+            <input class="block border-2 rounded-md mt-1 w-full px-3" type="email" name="email" placeholder="email">
+            <a class="mt-2 inline-block font-semibold text-zinc-500" href="#">Forgot password?</a>
+            <input class="block border-2 rounded mt-2 w-full px-3 py-1 bg-red-500 rounded-full" value="Create New Account" type="submit">
+            <p class="text-center text-xs font-semibold text-zinc-700 mt-3 px-3 mx-auto w-3/4 ">By continuing, you agree to Pinterest's Terms of Service; ; Opens a new tab. Notice at collection; Opens a new tab.
+            </p>
+        </form>
+        <a class="inline-block mt-4 text-sm w-full font-semibold text-zinc-700 text-center" href="/">Login Existing Account</a>
+    </div>
+</div>
+
+
+
+
+<% include ./partials/footer.ejs %>
